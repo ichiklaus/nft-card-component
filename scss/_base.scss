@@ -1,0 +1,28 @@
+/* resets, variables, mixins, and any utility classes */
+
+// Outfit font family
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@300;400;600&display=swap");
+
+/* Primary colours */
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$overlay-cyan: prefix-to-hsla(178, 100%, 50%, 60%);
+
+/* Neutral colours */
+// Very dark blue  (Main BG)
+$main-bg: hsl(217, 54%, 11%);
+// Very dark blue (Card BG)
+$card-bg: hsl(216, 50%, 16%);
+// Very dark blue (line)
+$line: hsl(215, 32%, 27%);
+// Whites
+$white: hsl(0, 0%, 100%);
+
+/* Body font */
+$paragraph-font-size: 18px;
+$font-family-outfit: "Outfit", sans-serif;
+
+
+@function prefix-to-hsla($h, $s, $l, $a) {
+    @return unquote($string: "hsla(#{$h}, #{$s}, #{$l}, #{$a})");
+}

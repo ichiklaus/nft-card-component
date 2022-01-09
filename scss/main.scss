@@ -1,0 +1,7 @@
+@import "layout";
+@import "base";
+@import "components";
+
+/* Importing Normalize SCSS to reset defaults */
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
